@@ -116,7 +116,7 @@ function startAobaBot(googleAuth) {
 			if (botkit.config.debug_channel !== undefined) {
 				bot.say({
 					'channel': botkit.util.channel.getChannelID(botkit.config.debug_channel),
-					'text': '<!here|@here> おはようございまーす！'
+					'text': '<!here|@here> おはよう♪'
 				});
 			}
 		});
