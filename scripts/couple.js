@@ -104,7 +104,6 @@ class Pixiv {
 					if (this.isNumber(num)) {
 						count += num;
 					}
-					console.log('count:' + count);
 				});
 				resolve(count);
 			});
