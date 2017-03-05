@@ -73,7 +73,7 @@ function loadScripts(dirName, botkit, bot) {
 function startAobaBot(googleAuth) {
 	// Redis
 	let botkit = BotKit.slackbot({
-		'debug': Program.debug,
+		'debug': process.env.DEBUG_MODE || Program.debug,
 		'storage': storage({'url': process.env.REDIS_URL || 'redis://localhost:6379'}),
 		'google': googleAuth,
 		'debug_channel': process.env.DEBUG_INFO_CHANNEL || Program.channel

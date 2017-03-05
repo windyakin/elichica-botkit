@@ -3,3 +3,4 @@ node_modules/
 .environment
 google-calendar/*
 !google-calendar/.keep
+redis/
