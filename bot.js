@@ -121,4 +121,9 @@ function startAobaBot(googleAuth) {
 			}
 		});
 	});
+
+	// RTM接続が死んだ時に自分自身を呼び出し直す
+	botkit.on('rtm_close', (bot, err) => {
+		startAobaBot(googleAuth);
+	});
 }
